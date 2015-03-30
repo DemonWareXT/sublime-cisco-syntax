@@ -1,0 +1,154 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+name: Cisco
+scopeName: text.cisco
+fileTypes: [cfg, txt, ios]
+uuid: 65b8e7fa-d84d-4416-9913-be7bae0211bd
+
+patterns:
+- comment: Cryptography
+  name: string.unquoted.cisco
+  match: 'crypto '
+
+- comment: Highlight comments
+  name: comment.cisco
+  match: ^[\s]*!(.*)
+
+- comment: tunnel group
+  name: support.class.cisco
+  match: tunnel-group
+
+# simple functions
+- comment: Service
+  name: support.function.cisco
+  match: (?<=\s|^)service
+
+- comment: Cryptography 
+  name: support.class.cisco
+  match: crypto
+
+- comment: Access List
+  name: support.function.cisco
+  match: access-list
+
+- comment: Username Config(s)
+  name: support.function.cisco
+  match: username
+
+- comment: Authentication Providers
+  name: support.function.cisco
+  match: aaa
+
+- comment: Time service setting
+  name: support.function.cisco
+  match: clock
+
+- comment: IP Service settings
+  name: support.function.cisco
+  match: (?<=\s|^)ip
+
+- comment: Spanning Tree settings
+  name: support.function.cisco
+  match: spanning-tree
+
+- comment: VTP settings
+  name: support.function.cisco
+  match: vtp
+
+- comment: Error Disable settings
+  name: support.function.cisco
+  match: errdisable
+
+- comment: Interface config settings
+  name: support.function.cisco
+  match: interface
+
+- comment: SNMP config settings
+  name: support.function.cisco
+  match: snmp-server
+
+- comment: SNMP config settings
+  name: support.function.cisco
+  match: banner
+
+- comment: Line config settings
+  name: support.function.cisco
+  match: line\s(con|vty)
+
+- comment: Switchport settings
+  name: support.function.cisco
+  match: switchport
+
+#Variables
+- comment: Hostname
+  name: variable.parameter.cisco
+  match: hostname
+
+- comment: Enable Password
+  name: variable.parameter.cisco
+  match: enable
+
+- comment: Logging options
+  name: variable.parameter.cisco
+  match: logging 
+
+- comment: VLAN Handling
+  name: variable.parameter.cisco
+  match: vlan
+
+- comment: Port Channel options
+  name: variable.parameter.cisco
+  match: port-channel
+
+- comment: Radius options
+  name: variable.parameter.cisco
+  match: radius-server
+
+- comment: NTP Server options
+  name: variable.parameter.cisco
+  match: ntp server
+
+- comment: Interface Description options
+  name: variable.parameter.cisco
+  match: description
+
+#Constants
+- comment: deny access list
+  name: support.constant.cisco
+  match: 'deny '
+
+- comment: permit access list
+  name: constant.character.escape.cisco
+  match: 'permit '
+
+- comment: static
+  name: constant.numeric.cisco
+  match: static
+
+- comment: Highlight numbers
+  name: constant.numeric.cisco
+  match: \d+\.\d+\.\d+\.\d+(/\d{1,2})?
+
+- comment: Highlight numbers
+  name: constant.numeric.cisco
+  match: '[0-9a-fA-F]{0,4}:([0-9a-fA-F]{0,4}:)+[0-9a-fA-F]{0,4}(/\d{1,3})?'
+
+- comment: ANY mostly used for access lists
+  name: string.unquoted.cisco
+  match: any
+
+- comment: range
+  name: string.unquoted.cisco
+  match: range
+
+# Defaulting or Negating
+- comment: Default command
+  name: invalid.illegal.cisco
+  match: '^\s*default '
+
+- comment: Negate command
+  name: invalid.illegal.cisco
+  match: '^\s*no '
+
+- comment: Shudown an interface
+  name: invalid.illegal.cisco
+  match: shutdown
