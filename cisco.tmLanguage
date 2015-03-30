@@ -308,6 +308,14 @@
 			<key>name</key>
 			<string>invalid.illegal.cisco</string>
 		</dict>
+		<dict>
+			<key>comment</key>
+			<string>end</string>
+			<key>match</key>
+			<string>end</string>
+			<key>name</key>
+			<string>invalid.illegal.cisco</string>
+		</dict>
 	</array>
 	<key>scopeName</key>
 	<string>text.cisco</string>

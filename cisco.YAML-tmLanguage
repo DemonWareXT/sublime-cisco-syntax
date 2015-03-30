@@ -156,3 +156,7 @@ patterns:
 - comment: exit
   name: invalid.illegal.cisco
   match: exit
+
+- comment: end
+  name: invalid.illegal.cisco
+  match: end
