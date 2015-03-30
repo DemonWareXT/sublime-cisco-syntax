@@ -300,6 +300,14 @@
 			<key>name</key>
 			<string>invalid.illegal.cisco</string>
 		</dict>
+		<dict>
+			<key>comment</key>
+			<string>exit</string>
+			<key>match</key>
+			<string>exit</string>
+			<key>name</key>
+			<string>invalid.illegal.cisco</string>
+		</dict>
 	</array>
 	<key>scopeName</key>
 	<string>text.cisco</string>

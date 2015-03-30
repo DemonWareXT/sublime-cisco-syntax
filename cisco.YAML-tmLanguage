@@ -152,3 +152,7 @@ patterns:
 - comment: Shudown an interface
   name: invalid.illegal.cisco
   match: shutdown
+
+- comment: exit
+  name: invalid.illegal.cisco
+  match: exit
