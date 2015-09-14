@@ -234,7 +234,7 @@
 			<key>match</key>
 			<string>permit </string>
 			<key>name</key>
-			<string>constant.character.escape.cisco</string>
+			<string>support.constant.cisco</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -254,9 +254,17 @@
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>Highlight numbers</string>
+			<string>Highlight IP numbers</string>
 			<key>match</key>
 			<string>[0-9a-fA-F]{0,4}:([0-9a-fA-F]{0,4}:)+[0-9a-fA-F]{0,4}(/\d{1,3})?</string>
+			<key>name</key>
+			<string>constant.numeric.cisco</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Highlight numbers</string>
+			<key>match</key>
+			<string>\d+(=?(\s|$))</string>
 			<key>name</key>
 			<string>constant.numeric.cisco</string>
 		</dict>
@@ -278,6 +286,54 @@
 		</dict>
 		<dict>
 			<key>comment</key>
+			<string>recovery</string>
+			<key>match</key>
+			<string>recovery</string>
+			<key>name</key>
+			<string>variable.parameter.cisco</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>forward-protocol</string>
+			<key>match</key>
+			<string>forward-protocol</string>
+			<key>name</key>
+			<string>variable.parameter.cisco</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>privilege</string>
+			<key>match</key>
+			<string>privilege</string>
+			<key>name</key>
+			<string>variable.parameter.cisco</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>secret</string>
+			<key>match</key>
+			<string>secret</string>
+			<key>name</key>
+			<string>variable.parameter.cisco</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>classless</string>
+			<key>match</key>
+			<string>classless</string>
+			<key>name</key>
+			<string>variable.parameter.cisco</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>authentication</string>
+			<key>match</key>
+			<string>authentication</string>
+			<key>name</key>
+			<string>variable.parameter.cisco</string>
+		</dict>
+		<dict>
+			<key>comment</key>
 			<string>Default command</string>
 			<key>match</key>
 			<string>^\s*default </string>
@@ -288,7 +344,7 @@
 			<key>comment</key>
 			<string>Negate command</string>
 			<key>match</key>
-			<string>^\s*no </string>
+			<string>^\s*no(=?\s)</string>
 			<key>name</key>
 			<string>invalid.illegal.cisco</string>
 		</dict>
@@ -312,7 +368,7 @@
 			<key>comment</key>
 			<string>end</string>
 			<key>match</key>
-			<string>end</string>
+			<string>^end</string>
 			<key>name</key>
 			<string>invalid.illegal.cisco</string>
 		</dict>
