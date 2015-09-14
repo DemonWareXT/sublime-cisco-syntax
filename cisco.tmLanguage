@@ -30,6 +30,22 @@
 		</dict>
 		<dict>
 			<key>comment</key>
+			<string>Highlight Stars</string>
+			<key>match</key>
+			<string>\*</string>
+			<key>name</key>
+			<string>comment.cisco</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Highlight quotes</string>
+			<key>match</key>
+			<string>\"</string>
+			<key>name</key>
+			<string>comment.cisco</string>
+		</dict>
+		<dict>
+			<key>comment</key>
 			<string>tunnel group</string>
 			<key>match</key>
 			<string>tunnel-group</string>
@@ -182,6 +198,54 @@
 		</dict>
 		<dict>
 			<key>comment</key>
+			<string>incoming</string>
+			<key>match</key>
+			<string>incoming</string>
+			<key>name</key>
+			<string>variable.parameter.cisco</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>password</string>
+			<key>match</key>
+			<string>password</string>
+			<key>name</key>
+			<string>variable.parameter.cisco</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>exec-timeout</string>
+			<key>match</key>
+			<string>exec-timeout</string>
+			<key>name</key>
+			<string>variable.parameter.cisco</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>access-class</string>
+			<key>match</key>
+			<string>access-class</string>
+			<key>name</key>
+			<string>variable.parameter.cisco</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>transport</string>
+			<key>match</key>
+			<string>transport</string>
+			<key>name</key>
+			<string>variable.parameter.cisco</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>notify</string>
+			<key>match</key>
+			<string>notify</string>
+			<key>name</key>
+			<string>variable.parameter.cisco</string>
+		</dict>
+		<dict>
+			<key>comment</key>
 			<string>Enable Password</string>
 			<key>match</key>
 			<string>enable</string>
@@ -294,6 +358,46 @@
 		</dict>
 		<dict>
 			<key>comment</key>
+			<string>http</string>
+			<key>match</key>
+			<string>http</string>
+			<key>name</key>
+			<string>string.unquoted.cisco</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>udp</string>
+			<key>match</key>
+			<string>udp</string>
+			<key>name</key>
+			<string>string.unquoted.cisco</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>tcp</string>
+			<key>match</key>
+			<string>tcp</string>
+			<key>name</key>
+			<string>string.unquoted.cisco</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>cause</string>
+			<key>match</key>
+			<string>cause</string>
+			<key>name</key>
+			<string>string.unquoted.cisco</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>interval</string>
+			<key>match</key>
+			<string>interval</string>
+			<key>name</key>
+			<string>string.unquoted.cisco</string>
+		</dict>
+		<dict>
+			<key>comment</key>
 			<string>range</string>
 			<key>match</key>
 			<string>range</string>
@@ -337,6 +441,22 @@
 			<string>classless</string>
 			<key>match</key>
 			<string>classless</string>
+			<key>name</key>
+			<string>variable.parameter.cisco</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>community</string>
+			<key>match</key>
+			<string>community</string>
+			<key>name</key>
+			<string>variable.parameter.cisco</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>address</string>
+			<key>match</key>
+			<string>address</string>
 			<key>name</key>
 			<string>variable.parameter.cisco</string>
 		</dict>

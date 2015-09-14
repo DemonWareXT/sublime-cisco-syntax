@@ -13,6 +13,14 @@ patterns:
   name: comment.cisco
   match: ^[\s]*!(.*)
 
+- comment: Highlight Stars
+  name: comment.cisco
+  match: '\*'
+
+- comment: Highlight quotes
+  name: comment.cisco
+  match: '\"'
+
 - comment: tunnel group
   name: support.class.cisco
   match: tunnel-group
@@ -91,6 +99,30 @@ patterns:
   name: variable.parameter.cisco
   match: hostname
 
+- comment: incoming
+  name: variable.parameter.cisco
+  match: incoming
+
+- comment: password
+  name: variable.parameter.cisco
+  match: password
+  
+- comment: exec-timeout
+  name: variable.parameter.cisco
+  match: exec-timeout
+
+- comment: access-class
+  name: variable.parameter.cisco
+  match: access-class
+  
+- comment: transport
+  name: variable.parameter.cisco
+  match: transport
+
+- comment: notify
+  name: variable.parameter.cisco
+  match: notify
+
 - comment: Enable Password
   name: variable.parameter.cisco
   match: enable
@@ -148,6 +180,26 @@ patterns:
   name: string.unquoted.cisco
   match: any
 
+- comment: http
+  name: string.unquoted.cisco
+  match: http
+
+- comment: udp
+  name: string.unquoted.cisco
+  match: udp
+
+- comment: tcp
+  name: string.unquoted.cisco
+  match: tcp
+
+- comment: cause
+  name: string.unquoted.cisco
+  match: cause
+
+- comment: interval
+  name: string.unquoted.cisco
+  match: interval
+
 - comment: range
   name: string.unquoted.cisco
   match: range
@@ -171,6 +223,14 @@ patterns:
 - comment: classless
   name: variable.parameter.cisco
   match: classless
+
+- comment: community
+  name: variable.parameter.cisco
+  match: community
+
+- comment: address
+  name: variable.parameter.cisco
+  match: address
 
 - comment: authentication
   name: variable.parameter.cisco
