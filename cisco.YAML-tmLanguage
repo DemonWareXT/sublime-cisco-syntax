@@ -106,7 +106,7 @@ patterns:
 - comment: password
   name: variable.parameter.cisco
   match: password
-  
+
 - comment: exec-timeout
   name: variable.parameter.cisco
   match: exec-timeout
@@ -126,6 +126,10 @@ patterns:
 - comment: Enable Password
   name: variable.parameter.cisco
   match: enable
+
+- comment: secret hash
+  name: string.unquoted.cisco
+  match: '\$1\$.*'
 
 - comment: Logging options
   name: variable.parameter.cisco

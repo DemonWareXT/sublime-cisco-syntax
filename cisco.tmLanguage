@@ -254,6 +254,14 @@
 		</dict>
 		<dict>
 			<key>comment</key>
+			<string>secret hash</string>
+			<key>match</key>
+			<string>\$1\$.*</string>
+			<key>name</key>
+			<string>string.unquoted.cisco</string>
+		</dict>
+		<dict>
+			<key>comment</key>
 			<string>Logging options</string>
 			<key>match</key>
 			<string>logging</string>
