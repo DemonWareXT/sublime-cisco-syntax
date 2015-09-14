@@ -42,6 +42,14 @@ patterns:
   name: support.function.cisco
   match: clock
 
+- comment: system service setting
+  name: support.function.cisco
+  match: system
+
+- comment: routing service setting
+  name: support.function.cisco
+  match: routing
+
 - comment: IP Service settings
   name: support.function.cisco
   match: (?<=\s|^)ip

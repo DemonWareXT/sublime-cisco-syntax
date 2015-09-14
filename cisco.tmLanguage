@@ -86,6 +86,22 @@
 		</dict>
 		<dict>
 			<key>comment</key>
+			<string>system service setting</string>
+			<key>match</key>
+			<string>system</string>
+			<key>name</key>
+			<string>support.function.cisco</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>routing service setting</string>
+			<key>match</key>
+			<string>routing</string>
+			<key>name</key>
+			<string>support.function.cisco</string>
+		</dict>
+		<dict>
+			<key>comment</key>
 			<string>IP Service settings</string>
 			<key>match</key>
 			<string>(?&lt;=\s|^)ip</string>
